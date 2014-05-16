@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+LOG_DEBUG	log.h	23;"	d
+LOG_ERROR	log.h	27;"	d
+LOG_INFO	log.h	24;"	d
+LOG_MAX_LENGTH	log.h	29;"	d
+LOG_NOTICE	log.h	25;"	d
+LOG_WARNING	log.h	26;"	d
+RG_LINE_MAX_LEN	config.h	22;"	d
+RG_MAX_CONFIG_LEN	config.h	23;"	d
+__RGCLIST_H__	list.h	20;"	d
+__RGCONFIG_H__	config.h	19;"	d
+__RGLOG_H__	log.h	19;"	d
+configfile	config.h	/^    char *configfile;$/;"	m	struct:rgServer
+count	config.h	/^    int count;\/*client connected num*\/$/;"	m	struct:serverNode
+head	list.h	/^    listNode *head;$/;"	m	struct:list
+hostname	config.h	/^    char *hostname;$/;"	m	struct:serverNode
+initServerConfig	config.c	/^void initServerConfig(){$/;"	f
+ip	config.h	/^    char *ip;$/;"	m	struct:serverNode
+len	list.h	/^    unsigned long len; $/;"	m	struct:list
+list	config.h	/^    list *list;    $/;"	m	struct:rgServer
+list	list.h	/^typedef struct list{$/;"	s
+list	list.h	/^}list;$/;"	t	typeref:struct:list
+listAddNodeHead	list.c	/^list *listAddNodeHead(list *list,void *value ){$/;"	f
+listAddNodeTail	list.c	/^list *listAddNodeTail(list *list, void *value){$/;"	f
+listCreate	list.c	/^list *listCreate(void){$/;"	f
+listDelNode	list.c	/^list *listDelNode(list *list, listNode *node){$/;"	f
+listIndex	list.c	/^list *listIndex(list *list, long index){$/;"	f
+listNode	list.h	/^typedef struct listNode{$/;"	s
+listNode	list.h	/^}listNode;$/;"	t	typeref:struct:listNode
+listRelease	list.c	/^void listRelease(list *list){$/;"	f
+loadConfig	config.c	/^void loadConfig(char *configfile){$/;"	f
+loadConfigFromConfigString	config.c	/^void loadConfigFromConfigString(char *str){$/;"	f
+logfile	config.h	/^    char *logfile;$/;"	m	struct:rgServer
+loglevel	config.h	/^    int loglevel;$/;"	m	struct:rgServer
+main	main.c	/^int main(int argc, char **argv){$/;"	f
+memo	config.h	/^    char *memo;$/;"	m	struct:serverNode
+next	list.h	/^   struct listNode *next; $/;"	m	struct:listNode	typeref:struct:listNode::listNode
+port	config.h	/^    int port;$/;"	m	struct:serverNode
+prev	list.h	/^   struct listNode *prev;$/;"	m	struct:listNode	typeref:struct:listNode::listNode
+rgLog	log.c	/^void rgLog(int loglevel, char *fmt, ...){$/;"	f
+rgLogRaw	log.c	/^void rgLogRaw(int loglevel, char *msg){$/;"	f
+rgServer	config.h	/^struct rgServer{$/;"	s
+server	config.c	/^struct rgServer server;$/;"	v	typeref:struct:rgServer
+serverNode	config.h	/^struct serverNode{$/;"	s
+strsplit	config.c	/^char ** strsplit(const char *str, char *delim){$/;"	f
+tail	list.h	/^    listNode *tail;$/;"	m	struct:list
+usage	main.c	/^void usage(){$/;"	f
+value	list.h	/^   void *value;$/;"	m	struct:listNode
+version	main.c	/^void version(){$/;"	f

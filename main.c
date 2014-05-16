@@ -39,6 +39,9 @@ void usage(){
 void version(){
     exit(0);
 }
+void rgMonitor(){
+
+}
 int main(int argc, char **argv){
     initServerConfig();
     if(argc<2){
@@ -57,4 +60,5 @@ int main(int argc, char **argv){
         server.configfile = argv[2];
     }
     loadConfig(server.configfile);
+    while(1);
 }

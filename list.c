@@ -53,6 +53,7 @@ list *listAddNodeTail(list *list, void *value){
     listNode *node;
     if((node = (listNode*)malloc(sizeof(node))) ==NULL)
         return NULL;
+    node->value = (void*)value;
     if(list->len == 0){
         list->head = list->tail = node; 
         node->prev = node->next = NULL;

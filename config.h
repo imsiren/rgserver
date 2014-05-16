@@ -26,12 +26,18 @@ struct rgServer{
     char *logfile;
     char *configfile;
     int loglevel;
-    list *list;    
+    int port;
+    struct rgServerTitle *rgTitle[10];    
+};
+struct rgServerTitle{
+    char *title;
+    list *list;
 };
 
 struct serverNode{
     int count;/*client connected num*/
     int port;
+    int online;
     char *hostname;
     char *ip;
     char *memo;
@@ -39,7 +45,7 @@ struct serverNode{
 
 void initServerConfig();
 struct serverNode *serverNodeCreate();
-
+struct rgServerTitle *rgServerTitleCreate(char *title);
 void loadConfig(char *filename);
 void loadConfigFromConfigString(char *str);
 #endif //__RGCONFIG_H__
