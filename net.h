@@ -16,13 +16,14 @@
  * =====================================================================================
  */
 #ifndef __RGNET_H__
-#include <sys/types.h>
-#include <sys/socket.h>
 
 #define NET_ERROR   -1
 #define NET_OK  1
 
 int netTcpConnect(char *addr, int port);
+
+static int netListen(int sockfd, int backlog);
+static int netAccept(int sockfd, struct sockaddr *addr, socklen_t *len);
 
 
 #endif //__RGNET_H__

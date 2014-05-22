@@ -27,6 +27,9 @@ struct rgServer{
     char *configfile;
     int loglevel;
     int port;
+    int sockfd;
+    struct sockaddr* addr;
+    socklen_t   *len;
     struct rgServerTitle *rgTitle[10];    
 };
 struct rgServerTitle{
