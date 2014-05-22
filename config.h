@@ -30,6 +30,7 @@ struct rgServer{
     int sockfd;
     struct sockaddr* addr;
     socklen_t   *len;
+    struct eventLoop *eventloop;
     struct rgServerTitle *rgTitle[10];    
 };
 struct rgServerTitle{
